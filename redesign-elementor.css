@@ -1,0 +1,872 @@
+/* ==========================================================================
+   Einsur Supply — Guía de Rediseño WordPress / Elementor (Jupiter X)
+   Este archivo aplica todos los estilos del rediseño y puede copiarse
+   directamente en Apariencia -> Personalizar -> CSS adicional en WordPress.
+   ========================================================================== */
+
+:root {
+  --einsur-primary: #192D66;
+  --einsur-accent: #DB212A;
+  --einsur-dark: #0C0D24;
+  --einsur-footer-bg: #0F1D44;
+  --einsur-text: #334155;
+  --einsur-bg-light: #F8FAFC;
+  --einsur-border: #E2E8F0;
+  --einsur-gold: #FACD31;
+}
+
+body {
+  font-family: "Open Sans", Sans-serif;
+  color: var(--einsur-text);
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   1. HEADER (Plantilla 279)
+   ========================================================================== */
+
+.jupiterx-header-custom {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+}
+
+/* Barra superior */
+.elementor-279 .elementor-element.elementor-element-12d6e11 {
+  background-color: var(--einsur-primary) !important;
+}
+.elementor-279 .elementor-element.elementor-element-12d6e11 > .elementor-container {
+  min-height: 38px !important;
+}
+.elementor-279 .elementor-element.elementor-element-28f6ff9 .elementor-icon,
+.elementor-279 .elementor-element.elementor-element-1db4608 .elementor-icon-list-icon i,
+.elementor-279 .elementor-element.elementor-element-28f6ff9 .elementor-icon svg,
+.elementor-279 .elementor-element.elementor-element-1db4608 .elementor-icon-list-icon svg {
+  color: var(--einsur-gold) !important;
+  stroke: var(--einsur-gold) !important;
+  fill: none !important;
+  font-size: 14px !important;
+}
+.einsur-svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.elementor-279 .elementor-element.elementor-element-28f6ff9 .elementor-icon-box-title,
+.elementor-279 .elementor-element.elementor-element-1db4608 .elementor-icon-list-item > .elementor-icon-list-text,
+.elementor-279 .elementor-element.elementor-element-1db4608 .elementor-icon-list-item > a {
+  font-family: "Open Sans", Sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.elementor-279 .elementor-element.elementor-element-1db4608 .elementor-icon-list-item a:hover .elementor-icon-list-text {
+  color: var(--einsur-gold) !important;
+}
+
+/* Menú principal */
+.elementor-279 .elementor-element.elementor-element-fa6d735 {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(15, 29, 68, 0.08) !important;
+}
+.elementor-279 .elementor-element.elementor-element-fa6d735 > .elementor-container {
+  min-height: 80px !important;
+}
+.elementor-279 .elementor-element.elementor-element-fda6c0d .raven-nav-menu-main .raven-nav-menu > li > a.raven-menu-item {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--einsur-dark) !important;
+  letter-spacing: 0.4px;
+}
+
+/* Botón primario Header: Solicitar Cotización */
+.elementor-279 .elementor-element.elementor-element-3805785 a.raven-button,
+.elementor-279 .elementor-element.elementor-element-3805785 .raven-button {
+  width: auto !important;
+  min-width: 175px;
+  height: 44px !important;
+  padding: 0px 22px !important;
+  border-radius: 6px !important;
+  background-color: var(--einsur-accent) !important;
+  transition: all 0.25s ease !important;
+}
+.elementor-279 .elementor-element.elementor-element-3805785 a.raven-button .button-text {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: 0.2px !important;
+}
+.elementor-279 .elementor-element.elementor-element-3805785 a.raven-button:hover {
+  background-color: var(--einsur-primary) !important;
+  transform: translateY(-1px);
+}
+
+/* Botón secundario Header: Bolsa de trabajo (Outline) */
+.elementor-279 .elementor-element.elementor-element-b34aacf > .elementor-widget-container {
+  padding: 0px 0px 0px 12px !important;
+}
+.elementor-279 .elementor-element.elementor-element-b34aacf a.raven-button,
+.elementor-279 .elementor-element.elementor-element-b34aacf .raven-button {
+  width: auto !important;
+  height: 44px !important;
+  padding: 0px 18px !important;
+  border-radius: 6px !important;
+  background-color: transparent !important;
+  border: 1.5px solid var(--einsur-primary) !important;
+  transition: all 0.25s ease !important;
+}
+.elementor-279 .elementor-element.elementor-element-b34aacf a.raven-button .button-text,
+.elementor-279 .elementor-element.elementor-element-b34aacf .raven-button-icon,
+.elementor-279 .elementor-element.elementor-element-b34aacf .raven-button-icon i {
+  color: var(--einsur-primary) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+.elementor-279 .elementor-element.elementor-element-b34aacf a.raven-button:hover {
+  background-color: var(--einsur-primary) !important;
+}
+.elementor-279 .elementor-element.elementor-element-b34aacf a.raven-button:hover .button-text,
+.elementor-279 .elementor-element.elementor-element-b34aacf a.raven-button:hover .raven-button-icon,
+.elementor-279 .elementor-element.elementor-element-b34aacf a.raven-button:hover .raven-button-icon i {
+  color: #ffffff !important;
+}
+.elementor-279 .elementor-element.elementor-element-b34aacf .raven-button .raven-button-overlay:before {
+  display: none !important;
+}
+
+/* ==========================================================================
+   2. PORTADA / HERO (Contenedor 569b792)
+   ========================================================================== */
+
+.elementor-8211 .elementor-element.elementor-element-569b792 {
+  --min-height: 600px !important;
+  min-height: 600px !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%) !important;
+  padding: 60px 24px !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.einsur-hero-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.elementor-8211 .elementor-element.elementor-element-bcd94db {
+  width: 55% !important;
+  flex: 1 1 55% !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.einsur-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(25, 45, 102, 0.08);
+  color: var(--einsur-primary);
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 50px;
+  letter-spacing: 0.2px;
+}
+.einsur-hero-badge i {
+  color: var(--einsur-accent);
+}
+.elementor-8211 .elementor-element.elementor-element-c45dc5f .raven-heading,
+.elementor-8211 .elementor-element.elementor-element-c45dc5f .raven-heading a {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 52px !important;
+  font-weight: 700 !important;
+  line-height: 1.15em !important;
+  color: var(--einsur-primary) !important;
+  margin: 0 !important;
+}
+.einsur-hero-subtitle {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--einsur-text);
+  max-width: 540px;
+  margin: 0;
+}
+.einsur-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+.einsur-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 28px;
+  background-color: var(--einsur-accent);
+  color: #ffffff !important;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(219, 33, 42, 0.22);
+}
+.einsur-btn-primary:hover {
+  background-color: var(--einsur-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(25, 45, 102, 0.25);
+}
+
+/* Botón secundario Hero: Ver Servicios */
+.elementor-8211 .elementor-element.elementor-element-30121a0 > .elementor-widget-container {
+  margin: 0 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-30121a0 a.raven-button,
+.elementor-8211 .elementor-element.elementor-element-30121a0 .raven-button {
+  width: auto !important;
+  height: 52px !important;
+  padding: 0 28px !important;
+  border-radius: 6px !important;
+  background-color: transparent !important;
+  border: 2px solid var(--einsur-primary) !important;
+  transition: all 0.25s ease !important;
+}
+.elementor-8211 .elementor-element.elementor-element-30121a0 a.raven-button .button-text {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  color: var(--einsur-primary) !important;
+  letter-spacing: 0.2px !important;
+}
+.elementor-8211 .elementor-element.elementor-element-30121a0 a.raven-button:hover {
+  background-color: var(--einsur-primary) !important;
+}
+.elementor-8211 .elementor-element.elementor-element-30121a0 a.raven-button:hover .button-text {
+  color: #ffffff !important;
+}
+.elementor-8211 .elementor-element.elementor-element-30121a0 .raven-button .raven-button-overlay:before {
+  display: none !important;
+}
+
+/* Imagen Hero (ahora responsiva, sin position: absolute) */
+.einsur-hero-media {
+  width: 45%;
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elementor-8211 .elementor-element.elementor-element-a47df06 {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  width: 100% !important;
+}
+.elementor-8211 .elementor-element.elementor-element-a47df06 img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(25, 45, 102, 0.10);
+  box-shadow: 0 22px 45px rgba(15, 29, 68, 0.16);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease;
+}
+.elementor-8211 .elementor-element.elementor-element-a47df06 img:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 28px 55px rgba(15, 29, 68, 0.22);
+}
+
+/* ==========================================================================
+   3. SECCIÓN NOSOTROS (Contenedor 20a3507)
+   ========================================================================== */
+
+.elementor-8211 .elementor-element.elementor-element-20a3507 {
+  --min-height: auto !important;
+  padding: 88px 20px !important;
+  background-color: #ffffff;
+}
+.elementor-8211 .elementor-element.elementor-element-20a3507 > .e-con-inner {
+  gap: 50px !important;
+  align-items: center !important;
+}
+.elementor-8211 .elementor-element.elementor-element-40cd5c4 .raven-heading,
+.elementor-8211 .elementor-element.elementor-element-40cd5c4 .raven-heading a {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  color: var(--einsur-accent) !important;
+}
+.elementor-8211 .elementor-element.elementor-element-7034e76 .raven-heading,
+.elementor-8211 .elementor-element.elementor-element-7034e76 .raven-heading a {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  line-height: 1.2em !important;
+  color: var(--einsur-primary) !important;
+}
+.elementor-8211 .elementor-element.elementor-element-795fcfa {
+  text-align: left !important;
+  font-family: "Open Sans", Sans-serif !important;
+  font-size: 16.5px !important;
+  line-height: 1.7em !important;
+  color: var(--einsur-text) !important;
+}
+
+/* Tarjeta ISO 9001:2015 */
+.elementor-8211 .elementor-element.elementor-element-0f1324f {
+  --min-height: auto !important;
+  padding: 18px 24px !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--einsur-border) !important;
+  box-shadow: 0 4px 14px rgba(15, 29, 68, 0.05) !important;
+  gap: 20px !important;
+  justify-content: flex-start !important;
+  margin-top: 8px !important;
+}
+.elementor-8211 .elementor-element.elementor-element-12438d8 {
+  width: 84px !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-12438d8 > .elementor-widget-container {
+  margin: 0 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-12438d8 img {
+  width: 84px !important;
+  height: auto !important;
+}
+.elementor-8211 .elementor-element.elementor-element-2efec8d {
+  text-align: left !important;
+  margin: 0 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-2efec8d .raven-heading {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 1.35em !important;
+  color: var(--einsur-primary) !important;
+  text-align: left !important;
+}
+
+/* Botón Conócenos más */
+.elementor-8211 .elementor-element.elementor-element-e8067ba a.raven-button,
+.elementor-8211 .elementor-element.elementor-element-e8067ba .raven-button {
+  width: auto !important;
+  height: 48px !important;
+  padding: 0 28px !important;
+  border-radius: 6px !important;
+}
+.elementor-8211 .elementor-element.elementor-element-e8067ba a.raven-button .button-text {
+  text-transform: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+/* Foto Nosotros y badge 12 Años */
+.elementor-8211 .elementor-element.elementor-element-3e50e8d .raven-image img {
+  border-radius: 12px !important;
+  box-shadow: 0 12px 30px rgba(15, 29, 68, 0.12);
+}
+.elementor-8211 .elementor-element.elementor-element-ed8cb9f {
+  border-radius: 10px !important;
+  padding: 20px 30px !important;
+  width: auto !important;
+  min-width: 220px;
+  min-height: 120px !important;
+  margin-top: -55px !important;
+  margin-right: 20px !important;
+  box-shadow: 0 15px 30px rgba(25, 45, 102, 0.28) !important;
+  position: relative;
+  z-index: 2;
+}
+.elementor-8211 .elementor-element.elementor-element-8312c58 .jet-headline__first .jet-headline__label {
+  font-size: 62px !important;
+  line-height: 1 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-8312c58 .jet-headline__second .jet-headline__label {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-left: 6px;
+}
+
+/* ==========================================================================
+   4. SECCIÓN SERVICIOS (Contenedores 62180fd y dcfa14e)
+   ========================================================================== */
+
+.elementor-8211 .elementor-element.elementor-element-62180fd {
+  --min-height: auto !important;
+  background-color: var(--einsur-bg-light) !important;
+  padding: 80px 20px 36px 20px !important;
+}
+.elementor-8211 .elementor-element.elementor-element-7c96ece .raven-heading {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  color: var(--einsur-accent) !important;
+}
+.elementor-8211 .elementor-element.elementor-element-be4906a .raven-heading {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  color: var(--einsur-primary) !important;
+  margin-top: 6px !important;
+}
+
+.elementor-8211 .elementor-element.elementor-element-dcfa14e {
+  --min-height: 440px !important;
+  background-color: var(--einsur-bg-light) !important;
+  padding: 0 20px 88px 20px !important;
+}
+.elementor-8211 .elementor-element.elementor-element-dcfa14e > .e-con-inner {
+  gap: 24px !important;
+}
+
+/* Tarjetas de servicios */
+.elementor-8211 .elementor-element.elementor-element-9425808,
+.elementor-8211 .elementor-element.elementor-element-6621180,
+.elementor-8211 .elementor-element.elementor-element-58f984a {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  padding: 32px 28px !important;
+  min-height: 420px !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+  gap: 12px !important;
+  box-shadow: 0 10px 25px rgba(15, 29, 68, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.elementor-8211 .elementor-element.elementor-element-9425808:hover,
+.elementor-8211 .elementor-element.elementor-element-6621180:hover,
+.elementor-8211 .elementor-element.elementor-element-58f984a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(15, 29, 68, 0.22);
+}
+
+/* Degradado vertical sobre foto */
+.elementor-8211 .elementor-element.elementor-element-9425808::before,
+.elementor-8211 .elementor-element.elementor-element-6621180::before,
+.elementor-8211 .elementor-element.elementor-element-58f984a::before {
+  background: linear-gradient(180deg, rgba(25, 45, 102, 0.18) 0%, rgba(12, 13, 36, 0.92) 100%) !important;
+  opacity: 1 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-9425808:hover::before,
+.elementor-8211 .elementor-element.elementor-element-6621180:hover::before,
+.elementor-8211 .elementor-element.elementor-element-58f984a:hover::before {
+  background: linear-gradient(180deg, rgba(25, 45, 102, 0.10) 0%, rgba(12, 13, 36, 0.95) 100%) !important;
+  opacity: 1 !important;
+}
+
+.elementor-8211 .elementor-element.elementor-element-ab9b23c,
+.elementor-8211 .elementor-element.elementor-element-8f24132,
+.elementor-8211 .elementor-element.elementor-element-fa8d7a0 {
+  text-align: left !important;
+  margin: 0 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-ab9b23c .elementor-heading-title,
+.elementor-8211 .elementor-element.elementor-element-8f24132 .elementor-heading-title,
+.elementor-8211 .elementor-element.elementor-element-fa8d7a0 .elementor-heading-title {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+.elementor-8211 .elementor-element.elementor-element-ff15ad9,
+.elementor-8211 .elementor-element.elementor-element-22a1f11,
+.elementor-8211 .elementor-element.elementor-element-e8e0e07 {
+  text-align: left !important;
+  font-family: "Open Sans", Sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6em !important;
+  color: rgba(255, 255, 255, 0.90) !important;
+  margin: 0 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-ff15ad9 > .elementor-widget-container,
+.elementor-8211 .elementor-element.elementor-element-22a1f11 > .elementor-widget-container,
+.elementor-8211 .elementor-element.elementor-element-e8e0e07 > .elementor-widget-container {
+  padding: 0 !important;
+}
+.elementor-8211 .elementor-element.elementor-element-ff15ad9 p {
+  margin: 0;
+}
+.einsur-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--einsur-gold) !important;
+  text-decoration: none !important;
+  transition: gap 0.2s ease, color 0.2s ease;
+  position: relative;
+  z-index: 2;
+}
+.einsur-card-link:hover {
+  gap: 10px;
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   5. SECCIÓN MARCAS (Contenedores ce737be y 330d525)
+   ========================================================================== */
+
+.elementor-8211 .elementor-element.elementor-element-ce737be {
+  --min-height: auto !important;
+  padding: 80px 20px 32px 20px !important;
+}
+.elementor-8211 .elementor-element.elementor-element-bf4b4e9 .raven-heading {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: var(--einsur-primary) !important;
+}
+
+#marcas.elementor-element-330d525 {
+  --min-height: auto !important;
+  padding: 0 20px 96px 20px !important;
+}
+#marcas.elementor-element-330d525 > .e-con-inner {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 20px !important;
+  align-items: stretch !important;
+}
+#marcas.elementor-element-330d525 > .e-con-inner > .e-con-child {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 110px !important;
+  height: 110px !important;
+  padding: 18px 20px !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--einsur-border) !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(15, 29, 68, 0.04) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.25s ease !important;
+}
+#marcas.elementor-element-330d525 > .e-con-inner > .e-con-child:hover {
+  background-color: #ffffff !important;
+  border-color: var(--einsur-primary) !important;
+  box-shadow: 0 8px 20px rgba(25, 45, 102, 0.10) !important;
+  transform: translateY(-3px);
+}
+#marcas .elementor-widget-image {
+  margin: 0 !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#marcas .elementor-widget-image img {
+  width: auto !important;
+  max-width: 140px !important;
+  max-height: 55px !important;
+  object-fit: contain !important;
+  filter: grayscale(100%);
+  opacity: 0.72;
+  transition: all 0.3s ease;
+}
+#marcas .e-con-child:hover .elementor-widget-image img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   6. FOOTER (Plantilla 4546)
+   ========================================================================== */
+
+.elementor-4546 .elementor-element.elementor-element-2ad39f5 {
+  background-color: var(--einsur-footer-bg) !important;
+}
+.elementor-4546 .elementor-element.elementor-element-2ad39f5 .elementor-element-883d48c {
+  margin-top: 56px !important;
+  margin-bottom: 36px !important;
+}
+.elementor-4546 .elementor-element.elementor-element-d00bd2a > .elementor-element-populated,
+.elementor-4546 .elementor-element.elementor-element-5ed6aa1 > .elementor-element-populated {
+  margin-left: 0 !important;
+  --e-column-margin-left: 0px !important;
+  padding: 0 20px !important;
+}
+.elementor-4546 .elementor-element.elementor-element-e0a5c35 > .elementor-element-populated {
+  padding: 0 20px 0 0 !important;
+}
+.elementor-4546 .raven-heading-title,
+.elementor-4546 .raven-heading-title-inner {
+  color: #ffffff !important;
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+}
+.elementor-4546 .elementor-icon-list-text {
+  color: #cbd5e1 !important;
+  font-family: "Open Sans", Sans-serif !important;
+  font-size: 14px !important;
+}
+.elementor-4546 .elementor-icon-list-item:hover .elementor-icon-list-text {
+  color: #ffffff !important;
+}
+.elementor-4546 .elementor-social-icon i,
+.elementor-4546 .elementor-social-icon svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+.elementor-4546 .elementor-social-icon:hover i,
+.elementor-4546 .elementor-social-icon:hover svg {
+  color: var(--einsur-gold) !important;
+  fill: var(--einsur-gold) !important;
+}
+.elementor-4546 .elementor-element.elementor-element-c3ddeea .raven-divider-solid {
+  background-color: rgba(255, 255, 255, 0.14) !important;
+}
+.elementor-4546 .elementor-element.elementor-element-0d13600 .raven-site-logo img {
+  width: 160px !important;
+  background-color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+.elementor-4546 .elementor-element.elementor-element-82bd1c3 {
+  color: #94a3b8 !important;
+  font-family: "Open Sans", Sans-serif !important;
+  font-size: 14px !important;
+}
+.elementor-4546 .elementor-element.elementor-element-2872dde {
+  padding-bottom: 20px;
+}
+
+/* ==========================================================================
+   7. ANIMACIONES SCROLL REVEAL
+   ========================================================================== */
+
+.einsur-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.einsur-reveal.einsur-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .einsur-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ==========================================================================
+   8. RESPONSIVE (Tablet & Móvil)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .elementor-8211 .elementor-element.elementor-element-c45dc5f .raven-heading {
+    font-size: 40px !important;
+  }
+  #marcas.elementor-element-330d525 > .e-con-inner {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Barra superior compacta centrada */
+  .elementor-279 .elementor-element.elementor-element-12d6e11 > .elementor-container {
+    min-height: 32px !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-f642394 .elementor-widget-wrap {
+    justify-content: center !important;
+  }
+
+  /* Menú principal móvil en UNA SOLA FILA limpia */
+  .elementor-279 .elementor-element.elementor-element-fa6d735 > .elementor-container {
+    min-height: 66px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 14px !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-06f77ee {
+    width: auto !important;
+    flex: 0 0 auto !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-06f77ee > .elementor-element-populated {
+    padding: 8px 0 !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-2074efb .raven-site-logo {
+    text-align: left !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-2074efb .raven-site-logo img {
+    max-width: 130px !important;
+    height: auto !important;
+  }
+
+  .elementor-279 .elementor-element.elementor-element-b2dc112 {
+    width: auto !important;
+    flex: 1 1 auto !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-b2dc112 > .elementor-element-populated {
+    padding: 0 !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-b2dc112.elementor-column > .elementor-widget-wrap {
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  /* Ocultar botón Bolsa de trabajo en móvil (está dentro del menú desplegable) */
+  .elementor-279 .elementor-element.elementor-element-b34aacf {
+    display: none !important;
+  }
+
+  /* Botón Solicitar Cotización compacto en móvil */
+  .elementor-279 .elementor-element.elementor-element-3805785 {
+    order: 1;
+    margin: 0 !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-3805785 a.raven-button,
+  .elementor-279 .elementor-element.elementor-element-3805785 .raven-button {
+    min-width: auto !important;
+    width: auto !important;
+    height: 36px !important;
+    padding: 0 12px !important;
+    border-radius: 6px !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-3805785 a.raven-button .button-text {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Botón hamburguesa a la derecha */
+  .elementor-279 .elementor-element.elementor-element-fda6c0d {
+    order: 2;
+    margin: 0 !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-fda6c0d > .elementor-widget-container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-fda6c0d .raven-nav-menu-toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    background-color: #f1f5f9;
+    cursor: pointer;
+  }
+  .elementor-279 .elementor-element.elementor-element-fda6c0d .hamburger .hamburger-box,
+  .elementor-279 .elementor-element.elementor-element-fda6c0d .hamburger-inner,
+  .elementor-279 .elementor-element.elementor-element-fda6c0d .hamburger-inner::before,
+  .elementor-279 .elementor-element.elementor-element-fda6c0d .hamburger-inner::after {
+    width: 22px !important;
+  }
+
+  /* Menú desplegable móvil */
+  .elementor-279 .elementor-element.elementor-element-fda6c0d .raven-nav-menu-mobile {
+    background-color: var(--einsur-primary) !important;
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 98px !important;
+    margin-top: 0 !important;
+    box-shadow: 0 16px 32px rgba(15, 29, 68, 0.25);
+    z-index: 998;
+  }
+  .elementor-279 .elementor-element.elementor-element-fda6c0d .raven-nav-menu-mobile.einsur-mobile-open {
+    display: block !important;
+    max-height: 420px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .elementor-279 .elementor-element.elementor-element-fda6c0d .raven-nav-menu-mobile .raven-nav-menu li > a {
+    padding: 13px 24px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Hero y secciones móvil */
+  .elementor-8211 .elementor-element.elementor-element-569b792 {
+    min-height: auto !important;
+    padding: 36px 16px 48px 16px !important;
+  }
+  .einsur-hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+  }
+  .elementor-8211 .elementor-element.elementor-element-bcd94db {
+    width: 100% !important;
+    align-items: center;
+  }
+  .elementor-8211 .elementor-element.elementor-element-c45dc5f .raven-heading {
+    font-size: 30px !important;
+    text-align: center !important;
+  }
+  .einsur-hero-subtitle {
+    font-size: 15.5px;
+    text-align: center;
+  }
+  .einsur-hero-actions {
+    justify-content: center;
+  }
+  .einsur-hero-media {
+    width: 100%;
+  }
+  .elementor-8211 .elementor-element.elementor-element-20a3507 {
+    padding: 56px 16px !important;
+  }
+  .elementor-8211 .elementor-element.elementor-element-7034e76 .raven-heading,
+  .elementor-8211 .elementor-element.elementor-element-be4906a .raven-heading,
+  .elementor-8211 .elementor-element.elementor-element-bf4b4e9 .raven-heading {
+    font-size: 28px !important;
+  }
+  .elementor-8211 .elementor-element.elementor-element-ed8cb9f {
+    margin-top: 16px !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+  #marcas.elementor-element-330d525 > .e-con-inner {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+  }
+  .elementor-4546 .elementor-element.elementor-element-e0a5c35 > .elementor-element-populated,
+  .elementor-4546 .elementor-element.elementor-element-d00bd2a > .elementor-element-populated,
+  .elementor-4546 .elementor-element.elementor-element-5ed6aa1 > .elementor-element-populated {
+    padding: 16px 0 !important;
+  }
+  .elementor-4546 .elementor-element.elementor-element-82bd1c3 {
+    text-align: center !important;
+    margin-top: 12px;
+  }
+}
