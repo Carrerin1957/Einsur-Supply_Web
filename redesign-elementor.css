@@ -1302,3 +1302,720 @@ body {
     text-align: center;
   }
 }
+
+
+/* ==========================================================================
+   10. PÁGINA CONTACTO (elementor-6720)
+   ========================================================================== */
+
+.elementor-6720 .einsur-contact-hero {
+  position: relative !important;
+  min-height: 400px !important;
+  overflow: hidden !important;
+  padding: 84px 24px 104px 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  background-color: #0c1738 !important;
+}
+.elementor-6720 .einsur-contact-hero > .e-con-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.elementor-6720 .einsur-contact-hero-content {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+.elementor-6720 .einsur-contact-hero h1 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Sección principal Contacto (Formulario + Tarjeta de Información) */
+.elementor-6720 .einsur-contact-main {
+  position: relative;
+  z-index: 5;
+  margin-top: -56px;
+  padding: 0 20px 72px 20px !important;
+}
+.elementor-6720 .einsur-contact-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.45fr 0.95fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* Tarjeta Formulario */
+.elementor-6720 .einsur-contact-form-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--einsur-border);
+  box-shadow: 0 20px 48px rgba(15, 29, 68, 0.10);
+  padding: 40px 42px;
+}
+.elementor-6720 .einsur-contact-form-card h2 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--einsur-primary);
+  margin: 8px 0 10px 0;
+}
+.elementor-6720 .einsur-contact-form-card h2 span {
+  color: var(--einsur-accent);
+}
+.elementor-6720 .einsur-contact-form-lead {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 15.5px;
+  font-weight: 500;
+  line-height: 1.65;
+  color: #334155;
+  margin: 0 0 28px 0;
+}
+
+/* Estilos modernos del formulario Raven */
+.elementor-6720 .raven-form {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 20px 20px !important;
+  margin: 0 !important;
+}
+.elementor-6720 .raven-form .raven-field-group {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.elementor-6720 .raven-form .raven-field-group.elementor-col-100,
+.elementor-6720 .raven-form .raven-field-type-textarea,
+.elementor-6720 .raven-form .raven-field-type-file,
+.elementor-6720 .raven-form .raven-field-type-submit-button {
+  grid-column: 1 / -1 !important;
+}
+.elementor-6720 .raven-form .raven-field-label {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  color: #0f1d44 !important;
+  margin: 0 !important;
+  letter-spacing: 0.1px;
+}
+.elementor-6720 .raven-form .raven-field-required .raven-field-label::after {
+  content: " *";
+  color: var(--einsur-accent);
+  font-weight: 700;
+}
+.elementor-6720 .raven-form input.raven-field:not([type="file"]),
+.elementor-6720 .raven-form textarea.raven-field {
+  width: 100% !important;
+  background-color: #ffffff !important;
+  border: 1.5px solid #94a3b8 !important;
+  border-radius: 8px !important;
+  padding: 13px 15px !important;
+  font-family: "Open Sans", Sans-serif !important;
+  font-size: 15.5px !important;
+  font-weight: 500 !important;
+  color: #0f172a !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+.elementor-6720 .raven-form textarea.raven-field {
+  min-height: 122px !important;
+  resize: vertical;
+}
+.elementor-6720 .raven-form input.raven-field:not([type="file"]):focus,
+.elementor-6720 .raven-form textarea.raven-field:focus {
+  background-color: #ffffff !important;
+  border-color: var(--einsur-primary) !important;
+  box-shadow: 0 0 0 4px rgba(25, 45, 102, 0.14) !important;
+}
+.elementor-6720 .raven-form input.raven-field::placeholder,
+.elementor-6720 .raven-form textarea.raven-field::placeholder {
+  color: #475569 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+
+/* Dropzone moderno para adjuntar archivo */
+.einsur-file-dropzone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 1.5px dashed #94a3b8;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.einsur-file-dropzone:hover {
+  border-color: var(--einsur-primary);
+  background-color: rgba(25, 45, 102, 0.04);
+}
+.einsur-file-dropzone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.einsur-file-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: rgba(25, 45, 102, 0.12);
+  color: var(--einsur-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.einsur-file-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+.einsur-file-text strong {
+  font-family: "Poppins", Sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0f1d44;
+}
+.einsur-file-text span {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #334155;
+}
+
+/* Botón enviar */
+.elementor-6720 .raven-form .raven-submit-button {
+  width: 100% !important;
+  height: 52px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: var(--einsur-accent) !important;
+  color: #ffffff !important;
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.4px;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(219, 33, 42, 0.28);
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+.elementor-6720 .raven-form .raven-submit-button:hover {
+  background-color: var(--einsur-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(25, 45, 102, 0.30);
+}
+.einsur-form-feedback {
+  grid-column: 1 / -1;
+  display: none;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.einsur-form-feedback.is-visible {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Tarjeta lateral de información de contacto */
+.elementor-6720 .einsur-contact-info-card {
+  background: linear-gradient(155deg, #192d66 0%, #0f1d44 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 34px;
+  box-shadow: 0 20px 48px rgba(15, 29, 68, 0.18);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+}
+.elementor-6720 .einsur-contact-info-card h3 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 8px 0 10px 0;
+}
+.elementor-6720 .einsur-contact-info-lead {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: rgba(226, 232, 240, 0.88);
+  margin: 0 0 24px 0;
+}
+.einsur-contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.einsur-contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.einsur-contact-info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.10);
+  color: var(--einsur-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.einsur-contact-info-item strong {
+  display: block;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(255, 255, 255, 0.70);
+  margin-bottom: 3px;
+}
+.einsur-contact-info-item a,
+.einsur-contact-info-item p {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+}
+.einsur-contact-info-item a:hover {
+  color: var(--einsur-gold);
+}
+.einsur-contact-iso-pill {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.einsur-contact-iso-pill img {
+  width: 52px;
+  height: auto;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 4px;
+}
+.einsur-contact-iso-pill strong {
+  display: block;
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+.einsur-contact-iso-pill span {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 12.5px;
+  color: rgba(226, 232, 240, 0.85);
+}
+
+/* Sección Google Maps */
+.elementor-6720 .einsur-map-section {
+  background-color: var(--einsur-bg-light);
+  padding: 64px 20px 88px 20px;
+}
+.elementor-6720 .einsur-map-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.elementor-6720 .einsur-map-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.elementor-6720 .einsur-map-header h2 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--einsur-primary);
+  margin: 6px 0 4px 0;
+}
+.elementor-6720 .einsur-map-header p {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 15px;
+  color: #475569;
+  margin: 0;
+}
+.einsur-map-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1.5px solid var(--einsur-primary);
+  color: var(--einsur-primary) !important;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+.einsur-map-link-btn:hover {
+  background-color: var(--einsur-primary);
+  color: #ffffff !important;
+}
+.elementor-6720 .einsur-map-frame-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--einsur-border);
+  box-shadow: 0 16px 38px rgba(15, 29, 68, 0.10);
+  background-color: #e2e8f0;
+  line-height: 0;
+}
+.elementor-6720 .einsur-map-frame-wrap iframe {
+  width: 100% !important;
+  height: 420px !important;
+  border: 0 !important;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .elementor-6720 .einsur-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-6720 .einsur-contact-hero {
+    min-height: 320px !important;
+    padding: 48px 16px 76px 16px !important;
+  }
+  .elementor-6720 .einsur-contact-hero-content {
+    align-items: center;
+    text-align: center;
+  }
+  .elementor-6720 .einsur-contact-hero h1 {
+    font-size: 32px;
+  }
+  .elementor-6720 .einsur-contact-main {
+    margin-top: -36px;
+    padding: 0 14px 56px 14px !important;
+  }
+  .elementor-6720 .einsur-contact-form-card,
+  .elementor-6720 .einsur-contact-info-card {
+    padding: 26px 20px;
+  }
+  .elementor-6720 .einsur-contact-form-card h2 {
+    font-size: 22px;
+  }
+  .elementor-6720 .raven-form {
+    grid-template-columns: 1fr !important;
+  }
+  .elementor-6720 .einsur-map-header h2 {
+    font-size: 26px;
+  }
+  .elementor-6720 .einsur-map-frame-wrap iframe {
+    height: 320px !important;
+  }
+}
+
+
+/* ==========================================================================
+   11. PÁGINA BOLSA DE TRABAJO (elementor-8991)
+   ========================================================================== */
+
+.elementor-8991 .einsur-jobs-hero {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 440px !important;
+  overflow: hidden !important;
+  padding: 92px 24px 112px 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  background-color: #0c1738 !important;
+}
+.elementor-8991 .einsur-jobs-hero > .e-con-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.elementor-8991 .einsur-jobs-hero-content {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+.elementor-8991 .einsur-jobs-hero h1 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Contenedor del formulario Bolsa de Trabajo */
+.elementor-8991 .einsur-jobs-main {
+  position: relative;
+  z-index: 5;
+  margin-top: -56px;
+  padding: 0 20px 88px 20px !important;
+}
+.elementor-8991 .einsur-jobs-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--einsur-border);
+  box-shadow: 0 20px 48px rgba(15, 29, 68, 0.11);
+  padding: 44px 48px;
+}
+.elementor-8991 .einsur-jobs-card-header {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--einsur-border);
+}
+.elementor-8991 .einsur-jobs-card-header h2 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--einsur-primary);
+  margin: 8px 0 8px 0;
+}
+.elementor-8991 .einsur-jobs-card-header p {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 15.5px;
+  font-weight: 500;
+  line-height: 1.65;
+  color: #334155;
+  margin: 0;
+}
+
+/* Grid de 3 columnas para el formulario de Bolsa de Trabajo */
+.elementor-8991 .raven-form {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px 22px !important;
+  margin: 0 !important;
+}
+.elementor-8991 .raven-form .raven-field-group {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.elementor-8991 .raven-form .einsur-form-section-title {
+  grid-column: 1 / -1;
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--einsur-primary);
+  padding-top: 8px;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 6px;
+}
+.elementor-8991 .raven-form .einsur-form-section-title:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+.elementor-8991 .raven-form .raven-field-type-file,
+.elementor-8991 .raven-form .raven-field-type-submit-button {
+  grid-column: 1 / -1 !important;
+}
+.elementor-8991 .raven-form .raven-field-label {
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  color: #0f1d44 !important;
+  margin: 0 !important;
+}
+.elementor-8991 .raven-form .raven-field-required > .raven-field-label::after {
+  content: " *";
+  color: var(--einsur-accent);
+  font-weight: 700;
+}
+.elementor-8991 .raven-form input.raven-field:not([type="file"]):not([type="radio"]),
+.elementor-8991 .raven-form select.raven-field {
+  width: 100% !important;
+  height: 48px !important;
+  background-color: #ffffff !important;
+  border: 1.5px solid #94a3b8 !important;
+  border-radius: 8px !important;
+  padding: 0 15px !important;
+  font-family: "Open Sans", Sans-serif !important;
+  font-size: 15.5px !important;
+  font-weight: 500 !important;
+  color: #0f172a !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+.elementor-8991 .raven-form input.raven-field:not([type="file"]):not([type="radio"]):focus,
+.elementor-8991 .raven-form select.raven-field:focus {
+  border-color: var(--einsur-primary) !important;
+  box-shadow: 0 0 0 4px rgba(25, 45, 102, 0.14) !important;
+}
+.elementor-8991 .raven-form input.raven-field::placeholder {
+  color: #475569 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+
+/* Select moderno */
+.elementor-8991 .einsur-select-wrap {
+  position: relative;
+  width: 100%;
+}
+.elementor-8991 .einsur-select-wrap select.raven-field {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px !important;
+  cursor: pointer;
+}
+.elementor-8991 .einsur-select-chevron {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0f1d44;
+  pointer-events: none;
+}
+
+/* Radio pills modernos (Sexo) */
+.elementor-8991 .einsur-radio-pills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 48px;
+}
+.elementor-8991 .einsur-radio-pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1.5px solid #94a3b8;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0;
+}
+.elementor-8991 .einsur-radio-pill:hover {
+  border-color: var(--einsur-primary);
+  background-color: rgba(25, 45, 102, 0.04);
+}
+.elementor-8991 .einsur-radio-pill input[type="radio"] {
+  accent-color: var(--einsur-primary);
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+}
+.elementor-8991 .einsur-radio-pill:has(input[type="radio"]:checked) {
+  border-color: var(--einsur-primary);
+  background-color: rgba(25, 45, 102, 0.08);
+  color: var(--einsur-primary);
+}
+
+/* Botón enviar Bolsa de Trabajo */
+.elementor-8991 .raven-form .raven-submit-button {
+  width: 100% !important;
+  height: 54px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: var(--einsur-accent) !important;
+  color: #ffffff !important;
+  font-family: "Poppins", Sans-serif !important;
+  font-size: 15.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.4px;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(219, 33, 42, 0.28);
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+.elementor-8991 .raven-form .raven-submit-button:hover {
+  background-color: var(--einsur-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(25, 45, 102, 0.30);
+}
+
+@media (max-width: 1024px) {
+  .elementor-8991 .raven-form {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-8991 .einsur-jobs-hero {
+    min-height: 330px !important;
+    padding: 52px 16px 80px 16px !important;
+  }
+  .elementor-8991 .einsur-jobs-hero-content {
+    align-items: center;
+    text-align: center;
+  }
+  .elementor-8991 .einsur-jobs-hero h1 {
+    font-size: 32px;
+  }
+  .elementor-8991 .einsur-jobs-main {
+    margin-top: -36px;
+    padding: 0 14px 60px 14px !important;
+  }
+  .elementor-8991 .einsur-jobs-card {
+    padding: 26px 20px;
+  }
+  .elementor-8991 .einsur-jobs-card-header h2 {
+    font-size: 24px;
+  }
+  .elementor-8991 .raven-form {
+    grid-template-columns: 1fr !important;
+  }
+}
